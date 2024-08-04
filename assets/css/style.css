@@ -28,6 +28,7 @@ section {
 }
 .content {
     margin-top: 5rem;
+    border: 1px solid red;
 }
 .heading {
     font-size: 4rem;
@@ -342,6 +343,15 @@ header .navbar ul li a:hover {
 .projects .content .project1 {
     margin-top: 0;
 }
+.projects .content .project2 {
+    margin-top: 4rem;
+}
+.projects .content .project3 {
+    margin-top: 8rem;
+}
+.projects .content .project4 {
+    margin-top: 12rem;
+}
 .projects .content .project-img {
     background-color: #000;
     height: 80%;
@@ -356,18 +366,56 @@ header .navbar ul li a:hover {
     font-size: 1.5rem;
     text-decoration: underline;
 }
+/* Projects style end */
+
+/* Contact style start */
+.contact .content h3 {
+    text-align: start;
+}
+.contact .content h3 i {
+    font-size: 3.5rem;
+    margin-right: 1rem;
+}
+
+.contact .content {
+   display: flex;
+   padding-top: 8rem;
+}
+.contact .content .info {
+    flex: 1;
+}
+.contact .content .info .sub-info {
+    border: 1px solid red;
+}
 
 
+.contact .content .form-container {
+    flex: 1;
+    background-color: #948ce7;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.projects .content .project2 {
-    margin-top: 4rem;
+.contact .content .form-container form {
+    width: 60%;
+    padding: 2rem;
+    background-color: #ada8a8;
 }
-.projects .content .project3 {
-    margin-top: 8rem;
+
+
+.contact .content .form-container form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background-color: #0685da;
 }
-.projects .content .project4 {
-    margin-top: 12rem;
+.contact .content .form-container form div input {
+    background-color: transparent;
 }
+
+
 
 
 
