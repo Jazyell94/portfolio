@@ -76,3 +76,31 @@ VanillaTilt.init(document.querySelectorAll(".skill"), {
     speed: 400
 });
 // Efeito no mouse sobre a image end //
+
+// Conteiner das skills //
+
+// Obtém o arquivo JSON
+fetch('skills.json')
+  .then(response => response.json())
+  .then(dados => {
+    // Obtém o elemento HTML onde os dados serão adicionados
+    const container = document.getElementById('skillsContainer');
+
+    // Cria uma string com o HTML que será adicionado
+    let html = '';
+
+    // Loop nos dados do JSON
+    dados.forEach(dado => {
+      // Cria um elemento HTML para cada dado
+      html += `
+        <div class="skill">
+            <img src=${dado.icon} alt="skill" />
+            <h2>${dado.name}</h2>
+        </div>
+      `;
+    });
+
+    // Adiciona o HTML ao container
+    container.innerHTML = html;
+  })
+  .catch(erro => console.error('Erro ao carregar dados:', erro));

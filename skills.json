@@ -1,0 +1,71 @@
+[
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/?size=50&id=20909&format=png&color=000000"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "Typescript",
+        "icon": "https://img.icons8.com/color/48/typescript.png"
+    },
+    {
+        "name": "React",
+        "icon": "https://img.icons8.com/?size=45&id=bzf0DqjXFHIW&format=png&color=000000"
+    },
+    {
+        "name": "NextJS",
+        "icon": "https://img.icons8.com/fluency/48/nextjs.png"
+    },
+    {
+        "name": "Angular",
+        "icon": "https://img.icons8.com/color/48/angularjs.png"
+    },
+    {
+        "name": "VueJS",
+        "icon": "https://img.icons8.com/color/48/vue-js.png"
+    },
+    {
+        "name": "PHP",
+        "icon": "https://img.icons8.com/officel/48/php-logo.png"
+    },
+
+    {
+        "name": "TailwindCSS",
+        "icon": "https://img.icons8.com/color/48/tailwind_css.png"
+    },
+    {
+        "name": "Sass",
+        "icon": "https://img.icons8.com/color/48/000000/sass.png"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+    },
+    {
+        "name": "WordPress",
+        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
+    },
+    {
+        "name": "Netlify",
+        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/000000/github.png"
+    },
+    {
+        "name": "NodeJs",
+        "icon": "https://img.icons8.com/?size=45&id=hsPbhkOH4FMe&format=png&color=000000"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/?size=45&id=w0gLt4XNjxKm&format=png&color=00758f"
+    }
+]

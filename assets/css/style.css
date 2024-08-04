@@ -24,10 +24,11 @@ body {
 }
 section {
     min-height: 100vh;
-    padding: 2rem 10%;
+    padding: 2rem 5%;
 }
 .content {
     margin-top: 5rem;
+    border: 1px solid red;
 }
 .heading {
     font-size: 4rem;
@@ -47,7 +48,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.7rem 10%;
+    padding: 1.7rem 5%;
     height: 6.5rem;
     background-color: #f5f5f5;
 }
@@ -58,7 +59,7 @@ header .logo {
     color: #000000;
 }
 header .logo span {
-    color: #4a9af7;
+    color: #2491fd;
 }
 header .navbar ul {
     list-style: none;
@@ -79,7 +80,7 @@ header .navbar ul li a {
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
     color: #000000;
-    border-bottom: 0.2rem solid #4a9af7;
+    border-bottom: 0.2rem solid #2491fd;
     padding: 0.5rem 0;
 }
 .navbar-dark {
@@ -144,10 +145,14 @@ header .navbar ul li a:hover {
 /* Menu hamburguer end */
 
 /* Home section start */
-.home dotlottie-player {
+.home .content {
+    position: relative;
+}
+.home .content dotlottie-player {
     position: absolute;
     right: 0;
-    width: 50%;
+    bottom: 0;
+    width: 45%;
 }
 .home .content .title {
     padding-top: 8rem;
@@ -173,7 +178,7 @@ header .navbar ul li a:hover {
     border-radius: 4em;
     transition: 0.5s;
     color: #fff;
-    background: #6e98f1;
+    background: #2491fd;
     font-family: "Nunito", sans-serif;
 }
 .home .btn span {
@@ -224,13 +229,13 @@ header .navbar ul li a:hover {
     background-color: #0e0e0e;
 }
 .social-icons a.linkedin {
-    background-color: #06abf7;
+    background-color: #000;
 }
 .social-icons a.telegram {
-    background-color: #007bb6;
+    background-color: #000;
 }
 .social-icons a.instagram {
-    background-color: #ee00da;
+    background-color: #000;
 }
 /* social icons end */
 /* Home section end */
@@ -241,13 +246,13 @@ header .navbar ul li a:hover {
 /* About section start */
 .about .content {
     display: flex;
-    padding-top: 8rem;
+    padding-top: 12rem;
 }
 .about .content .image {
     margin-right: 4rem;
 }
 .about .content .image img {
- width: 300px;
+ width: 280px;
  cursor: pointer;
 }
 .about .content .info h2 {
@@ -268,7 +273,7 @@ header .navbar ul li a:hover {
     padding-top: 1rem;
 }
 .about .contact span {
-    color: #06abf7;
+    color: #2491fd
 }
 .about .content .btn {
    display: inline-block;
@@ -281,6 +286,21 @@ header .navbar ul li a:hover {
     font-size: 1.5rem;
     color: #fff;
 }
+.about .content .btn i {
+    margin-left: .5rem;
+    font-size: 1.3rem;
+}
+.about .content .btn:hover i {
+    animation: down 1s ease-in-out infinite; 
+}
+@keyframes down {
+    50% {
+        transform: translateY(.2rem);
+    }
+    1000% {
+        transform: translate(-0.5rem);
+    }
+}
 /* About section end */
 
 /* Skills section start */
@@ -288,28 +308,20 @@ header .navbar ul li a:hover {
     font-size: 3.5rem;
     margin-right: 1rem;
 }
-.skills .content .skills-container {
-    padding-top: 2rem;
+.skills .skills-container {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(6, 1fr);
+    padding-top: 2rem;
 }
-.skills .content .skill {
+.skills .skills-container .skill {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 8px;
-    background-color: #bbdceb;
-
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-
-}
-.skills .content .skill p {
-    font-size: 1.5rem;
-    font-weight: 800;
-    transform: translateZ(20px);
+    border-radius: 10px;
+    padding-top: 1rem;
+    background-color: #948ce7;
 }
 /* Skills style end */
 
@@ -320,27 +332,42 @@ header .navbar ul li a:hover {
 }
 .projects .content .projects-container {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     flex-direction: row;
     padding-top: 2rem;
 }
 .projects .content .project1, .project2, .project3, .project4 {
     width: 80rem;
-    height: 30rem;
-    border-radius: 10px;
-    background-color: red;
+    height: 40rem;
 }
 .projects .content .project1 {
     margin-top: 0;
 }
-.projects .content .project2 {
-    margin-top: 2rem;
+.projects .content .project-img {
+    background-color: #000;
+    height: 80%;
 }
-.projects .content .project3 {
+.projects .content .project-info {
+    padding-top: 1rem;
+}
+.projects .content .project-info p {
+    font-size: 2rem;
+}
+.projects .content .project-info a {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+
+
+.projects .content .project2 {
     margin-top: 4rem;
 }
+.projects .content .project3 {
+    margin-top: 8rem;
+}
 .projects .content .project4 {
-    margin-top: 6rem;
+    margin-top: 12rem;
 }
 
 
