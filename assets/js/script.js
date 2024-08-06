@@ -104,3 +104,7 @@ fetch('skills.json')
     container.innerHTML = html;
   })
   .catch(erro => console.error('Erro ao carregar dados:', erro));
+
+
+
+  
