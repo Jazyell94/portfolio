@@ -263,7 +263,6 @@ header .navbar ul li a:hover {
 }
 .about .content .image {
     margin-right: 4rem;
-    border: 1px solid red;
 }
 .about .content .image img {
     width: 280px;
