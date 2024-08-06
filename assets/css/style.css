@@ -252,7 +252,9 @@ header .navbar ul li a:hover {
         top: 40rem;
         left: 0;
     }
-}
+    .home .content .title {
+        padding-top: 4rem;
+    }
 /* Home media queries ends */
 /* Home section end */
 
