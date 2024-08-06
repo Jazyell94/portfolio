@@ -250,7 +250,7 @@ header .navbar ul li a:hover {
 @media screen and (max-width: 850px) {
     .home .content dotlottie-player {
         top: 40rem;
-        left: 1rem;
+        left: 0;
     }
 }
 /* Home media queries ends */
