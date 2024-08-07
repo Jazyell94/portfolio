@@ -267,6 +267,7 @@ header .navbar ul li a:hover {
         width: 100%;
         position: relative;
         left: 0;
+        margin-top: 20rem;
     }
     .home .btn {
         padding: 1.3rem 2rem
@@ -288,13 +289,19 @@ header .navbar ul li a:hover {
 /* Home section end */
 
 /* About section start */
+.about {
+    background-color: #f1f1f1;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .about .content {
     display: flex;
-    padding-top: 12rem;
+    margin-top: 0;
 }
 .about .content .image {
     margin-right: 4rem;
-    border: 1px solid red;
 }
 .about .content .image img {
     width: 280px;
@@ -335,17 +342,6 @@ header .navbar ul li a:hover {
     margin-left: .5rem;
     font-size: 1.3rem;
 }
-.about .content .btn:hover i {
-    animation: down 1s ease-in-out infinite; 
-}
-@keyframes down {
-    50% {
-        transform: translateY(.2rem);
-    }
-    1000% {
-        transform: translate(-0.5rem);
-    }
-}
 /* About media queries start */ 
 @media screen and (max-width: 680px) {
     .about .content {
@@ -378,7 +374,7 @@ header .navbar ul li a:hover {
     flex-direction: column;
     border-radius: 10px;
     padding-top: 1rem;
-    background-color: #948ce7;
+    background-color: #f1f1f1;
 }
 /* Skills media queries start */
 @media screen and (max-width: 950px) {
@@ -661,13 +657,13 @@ header .navbar ul li a:hover {
 /* Footer media queries start */
 @media (max-width: 450px) {
     .footer .box-container .box {
-      margin: 1.5rem;
+        margin: 0 ;
     }
     .footer .box-container .box p {
-      padding: 0.7rem;
+        padding: 0.7rem;
     }
     .footer .box-container .box .share a {
-      padding: 1.2rem;
+        padding: 1.2rem;
     }
 }
 /* Footer media queries ends */

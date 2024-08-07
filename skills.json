@@ -32,10 +32,13 @@
         "icon": "https://img.icons8.com/color/48/vue-js.png"
     },
     {
+        "name": "Ember",
+        "icon": "https://img.icons8.com/windows/48/FC4605/ember.png"
+    },
+    {
         "name": "PHP",
         "icon": "https://img.icons8.com/officel/48/php-logo.png"
     },
-
     {
         "name": "TailwindCSS",
         "icon": "https://img.icons8.com/color/48/tailwind_css.png"
@@ -43,6 +46,10 @@
     {
         "name": "Sass",
         "icon": "https://img.icons8.com/color/48/000000/sass.png"
+    },
+    {
+        "name": "JQuery",
+        "icon": "https://img.icons8.com/ios-filled/48/0AC2BE/jquery.png"
     },
     {
         "name": "Bootstrap",
@@ -53,8 +60,8 @@
         "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
     },
     {
-        "name": "Netlify",
-        "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+        "name": "Git",
+        "icon": "https://img.icons8.com/color/48/git.png"
     },
     {
         "name": "GitHub",
@@ -62,10 +69,14 @@
     },
     {
         "name": "NodeJs",
-        "icon": "https://img.icons8.com/?size=45&id=hsPbhkOH4FMe&format=png&color=000000"
+        "icon": "https://img.icons8.com/fluency/48/node-js.png"
     },
     {
         "name": "MySQL",
-        "icon": "https://img.icons8.com/?size=45&id=w0gLt4XNjxKm&format=png&color=00758f"
+        "icon": "https://img.icons8.com/material-outlined/48/007E9A/mysql-logo.png"
+    },
+    {
+        "name": "Figma",
+        "icon": "https://img.icons8.com/color/48/figma--v1.png"
     }
 ]
