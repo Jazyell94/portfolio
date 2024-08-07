@@ -32,6 +32,10 @@
         "icon": "https://img.icons8.com/color/48/vue-js.png"
     },
     {
+        "name": "Express",
+        "icon": "https://img.icons8.com/color/48/express-js.png"
+    },
+    {
         "name": "Ember",
         "icon": "https://img.icons8.com/windows/48/FC4605/ember.png"
     },
@@ -72,11 +76,23 @@
         "icon": "https://img.icons8.com/fluency/48/node-js.png"
     },
     {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/mongo-db.png"
+    },
+    {
         "name": "MySQL",
         "icon": "https://img.icons8.com/material-outlined/48/007E9A/mysql-logo.png"
     },
     {
         "name": "Figma",
         "icon": "https://img.icons8.com/color/48/figma--v1.png"
+    },
+    {
+        "name": "Photoshop",
+        "icon": "https://img.icons8.com/fluency/48/adobe-photoshop.png"
+    },
+    {
+        "name": "AdobeXD",
+        "icon": "https://img.icons8.com/color/48/adobe-xd--v1.png"
     }
 ]
