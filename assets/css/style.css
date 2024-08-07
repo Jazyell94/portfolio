@@ -35,6 +35,11 @@ section {
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: 3rem;
+    }
+}
 /* Pre configurações end */
 
 /* Navbar start */
@@ -390,6 +395,9 @@ header .navbar ul li a:hover {
     .skills .skills-container {
         grid-template-columns: repeat(3, 1fr);
     }
+    .skills .content .heading i {
+        font-size: 2.8rem;
+    }
 }
 /* Skills media queries ends */
 /* Skills style ends */
@@ -461,6 +469,11 @@ header .navbar ul li a:hover {
     .projects .content .project4 {
         display: block;
         margin-top: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .projects .content .heading i {
+        font-size: 2.8rem;
     }
 }
 /* Projects media queries ends */
@@ -543,6 +556,11 @@ header .navbar ul li a:hover {
     .contact .content .form form {
         width: 100%;
         margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contact .content .heading i {
+        font-size: 2.8rem;
     }
 }
 /* Contact media queries ends */
