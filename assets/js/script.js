@@ -55,6 +55,7 @@ const navbar = document.querySelector('.header');
 
 // Adicione um evento de rolagem à janela
 window.addEventListener('scroll', () => {
+  
   // Verifique se a página foi rolada para baixo
   if (window.scrollY > 0) {
     // Mude a cor da navbar para uma cor escura
@@ -64,6 +65,22 @@ window.addEventListener('scroll', () => {
     navbar.classList.remove('navbar-dark');
   }
 });
+
+
+function mudarCorLinkMenu() {
+  var links = document.querySelectorAll('.menu-link');
+  var scrolled = window.scrollY > 0; // ajuste o valor de acordo com a sua necessidade
+
+  links.forEach(function(link) {
+    if (scrolled) {
+      link.classList.add('scrolled');
+    } else {
+      link.classList.remove('scrolled');
+    }
+  });
+}
+
+window.addEventListener('scroll', mudarCorLinkMenu);
 
 // Efeito no mouse sobre a image start //
 VanillaTilt.init(document.querySelector(".image"), {

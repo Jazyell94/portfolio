@@ -54,13 +54,13 @@ header {
     justify-content: space-between;
     padding: 1.7rem 5%;
     height: 6.5rem;
-    background-color: #fff;
+    background-color: #191919;
 }
 header .logo {
     font-family: "Raleway", sans-serif;
     font-size: 1.9rem;
     font-weight: 600;
-    color: #000000;
+    color: #e1e1e1;
 }
 header .logo span {
     color: #2491fd;
@@ -76,20 +76,25 @@ header .navbar li {
 }
 header .navbar ul li a {
     font-size: 1.57rem;
-    color: #000000;
+    color: #e1e1e1;
     font-weight: 600;
     letter-spacing: 0.04rem;
     font-family: "Raleway", sans-serif;
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-    color: #000000;
+    
     border-bottom: 0.2rem solid #2491fd;
     padding: 0.5rem 0;
 }
 .navbar-dark {
+    background-color: #fff;
     box-shadow: 0 1px 2px #e2e1e1;
-  }
+}
+.menu-link.scrolled {
+    color: #000;
+    font-weight: 600;
+}
 /* Navbar end */
 
 /* Menu hamburguer start */
@@ -148,23 +153,33 @@ header .navbar ul li a:hover {
 /* Menu hamburguer end */
 
 /* Home section start */
-.home .content {
-    position: relative;
+.home {
+    background-color: #191919;
 }
-.home .content dotlottie-player {
-    position: absolute;
-    right: -4rem;
-    bottom: 0;
-    width: 550px;
+.home .content {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
 }
 .home .content .title {
-    padding-top: 8rem;
+    text-align: center;
+
+    border: 1px solid red;
+}
+.home .content .title h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .home .content .title h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 5.5rem;
+    font-size: 8rem;
     font-weight: 600;
-    color: #000;
+    color: #fff;
 }
 .home .content p {
     font-size: 2.5rem;
@@ -173,22 +188,7 @@ header .navbar ul li a:hover {
     padding: 1rem 0;
     font-family: "Open Sans", sans-serif;
 }
-.home .btn {
-    margin-top: 1rem;
-    position: absolute;
-    line-height: 0;
-    padding: 1.6rem 3rem;
-    border-radius: 4em;
-    transition: 0.5s;
-    color: #fff;
-    background: #2491fd;
-    font-family: "Nunito", sans-serif;
-}
-.home .btn span {
-    font-weight: 700;
-    font-size: 1.7rem;
-    letter-spacing: 0.1rem;
-}
+
 .home .btn i {
     margin-left: 0.3rem;
     font-size: 1.5rem;
@@ -196,8 +196,7 @@ header .navbar ul li a:hover {
 }
 /* social icons start */
 .socials {
-    position: relative;
-    margin-top: 9rem;
+    border: 1px solid red;
 }
 .socials .social-icons {
     padding-left: 0;
