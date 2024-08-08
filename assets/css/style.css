@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Pre configurações start */
 * {
@@ -89,7 +90,7 @@ header .navbar ul li a:hover {
 }
 .navbar-dark {
     background-color: #fff;
-    box-shadow: 0 1px 2px #e2e1e1;
+    box-shadow: 0 1px 2px #e1e1e1;
 }
 .menu-link.scrolled {
     color: #000;
@@ -162,42 +163,65 @@ header .navbar ul li a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
 }
 .home .content .title {
     text-align: center;
-
-    border: 1px solid red;
 }
 .home .content .title h3 {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #e1e1e1;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
 }
 .home .content .title h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: 600;
+    color: #e1e1e1;
+}
+.home .content .typing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+.home .content .typing-container h3 {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+    font-family: "Poppins", sans-serif;;
+}
+.home .content .typing-container p {
+    flex: 2;
+    display: flex;
+    justify-content: start;
+    color: #fff;
+    font-weight: 600;
+}
+.home .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.home .buttons .btn1, 
+.home .buttons .btn2 {
+    font-size: 1.3rem;
+    
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
+    padding: .8rem;
+    color: #000;
+    background-color: #fff;
+}
+.home .buttons .btn2 {
+    background-color: transparent;
+    border: 1.5px solid #fff;
     color: #fff;
 }
-.home .content p {
-    font-size: 2.5rem;
-    color: #000;
-    font-weight: 400;
-    padding: 1rem 0;
-    font-family: "Open Sans", sans-serif;
-}
-
-.home .btn i {
-    margin-left: 0.3rem;
-    font-size: 1.5rem;
-    transition: 0.3s;
-}
 /* social icons start */
-.socials {
-    border: 1px solid red;
-}
 .socials .social-icons {
     padding-left: 0;
     margin-bottom: 0;
