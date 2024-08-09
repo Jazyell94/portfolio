@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 /* Pre configurações start */
 * {
     margin: 0;
@@ -25,7 +26,7 @@ body {
 }
 section {
     min-height: 100vh;
-    padding: 2rem 5%;
+    padding: 2rem 8%;
 }
 .content {
     margin-top: 5rem;
@@ -169,8 +170,8 @@ header .navbar ul li a:hover {
 }
 .home .content .title h3 {
     color: #e1e1e1;
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 600;
     font-family: "Poppins", sans-serif;
 }
 .home .content .title h2 {
@@ -178,25 +179,15 @@ header .navbar ul li a:hover {
     font-size: 10rem;
     font-weight: 600;
     color: #e1e1e1;
+     
 }
-.home .content .typing-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
+.home .content .title h2 span {
+    color: #191919;
+    text-shadow: #e1e1e1 1px -1px, #e1e1e1 -1px 1px, #e1e1e1 1px 1px, #e1e1e1 -1px -1px
 }
-.home .content .typing-container h3 {
-    flex: 1;
-    display: flex;
-    justify-content: end;
-    margin-right: 1rem;
-    font-family: "Poppins", sans-serif;;
-}
-.home .content .typing-container p {
-    flex: 2;
-    display: flex;
-    justify-content: start;
+.home .content  p {
     color: #fff;
+    font-size: 3rem;
     font-weight: 600;
 }
 .home .buttons {
@@ -204,15 +195,16 @@ header .navbar ul li a:hover {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .home .buttons .btn1, 
 .home .buttons .btn2 {
     font-size: 1.3rem;
-    
+    font-weight: 600;
     font-family: "Fira Sans", sans-serif;
     text-transform: uppercase;
-    padding: .8rem;
+    padding: .8rem 2rem;
+    border-radius: 5px;
     color: #000;
     background-color: #fff;
 }
@@ -221,76 +213,19 @@ header .navbar ul li a:hover {
     border: 1.5px solid #fff;
     color: #fff;
 }
-/* social icons start */
-.socials .social-icons {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-.socials .social-icons li {
-    display: inline-block;
-    margin-bottom: 14px;
-}
-.social-icons a {
-    font-size: 2rem;
-    display: inline-block;
-    line-height: 44px;
-    color: #fff;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    margin-right: 5px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-.social-icons a:active,
-.social-icons a:focus,
-.social-icons a:hover {
-    color: #fff;
-    background-color: #0685da;
-}
-.social-icons a.github {
-    background-color: #0e0e0e;
-}
-.social-icons a.linkedin {
-    background-color: #000;
-}
-.social-icons a.telegram {
-    background-color: #000;
-}
-.social-icons a.instagram {
-    background-color: #000;
-}
-/* social icons end */
-
 /* Home media queries start */
-@media screen and (max-width: 990px) {
-    .home .content dotlottie-player {
-        width: 450px;
-    }
-}
 @media screen and (max-width: 850px) {
-    .home .content dotlottie-player {
-        width: 350px;
-    }
-    .home .content .title {
-        padding-top: 4rem;
-    }
     .home .content .title h2 {
-        font-size: 4rem;
+        font-size: 8rem;
     }
-    .home .content p {
+    .home .content .typing-container h3,
+    .home .content .typing-container p {
         font-size: 2rem;
     }
 }
-@media screen and (max-width: 630px) {
-    .home .content dotlottie-player {
-        width: 100%;
-        position: relative;
-        left: 0;
-        margin-top: 20rem;
+@media screen and (max-width: 680px) {
+    .home .content .title h2 {
+        font-size: 6rem;
     }
     .home .btn {
         padding: 1.3rem 2rem
@@ -301,11 +236,10 @@ header .navbar ul li a:hover {
     .home .btn i {
         font-size: 1.3rem;
     }
-    .socials {
-        margin-top: 7rem;
-    }
-    .social-icons a {
-        font-size: 1.4rem; 
+}
+@media screen and (max-width: 680px) {
+    .home .content .title h2 {
+        font-size: 4rem;
     }
 }
 /* Home media queries ends */
@@ -318,25 +252,39 @@ header .navbar ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
 .about .content {
     display: flex;
-    margin-top: 0;
+    justify-content: space-between;
+    border: 1px solid red;
 }
 .about .content .image {
     margin-right: 4rem;
 }
 .about .content .image img {
-    width: 280px;
+    width: 350px;
     cursor: pointer;
 }
-.about .content .heading i {
-    font-size: 3.5rem;
-    margin-right: 1rem;
+.about .content .info {
+    border: 1px solid red;
+    
+}
+.about .content .info h3 {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #666666;
+    border: 1px solid red;
 }
 .about .content .info h2 {
-    font-size: 2.5rem;
-    padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    border: 1px solid red;
 }
 .about .content .info .tag {
     font-size: 1.8rem;

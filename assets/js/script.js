@@ -125,4 +125,20 @@ fetch('skills.json')
 
 
 
-  
+  // Verifica se a página está visível ao carregar
+document.addEventListener('DOMContentLoaded', function() {
+  if (document.hidden) {
+    document.title = 'Volte para o portifolio';
+  } else {
+    document.title = 'Portifólio | Jazyell Marcus';
+  }
+});
+
+// Verifica se a página está visível ao mudar de estado
+document.addEventListener('visibilitychange', function() {
+  if (document.hidden) {
+    document.title = 'Volte para o portifolio';
+  } else {
+    document.title = 'Portifólio | Jazyell Marcus';
+  }
+});
