@@ -248,17 +248,13 @@ header .navbar ul li a:hover {
 /* About section start */
 .about {
     background-color: #f1f1f1;
-    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 .about .content {
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
 }
 .about .content .image {
     margin-right: 4rem;
@@ -267,55 +263,45 @@ header .navbar ul li a:hover {
     width: 350px;
     cursor: pointer;
 }
-.about .content .info {
-    border: 1px solid red;
-    
-}
 .about .content .info h3 {
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: #666666;
-    border: 1px solid red;
 }
 .about .content .info h2 {
     font-family: "Poppins", sans-serif;
     font-size: 5rem;
     font-weight: 700;
     line-height: 4.5rem;
-    border: 1px solid red;
-}
-.about .content .info .tag {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #120f33;
 }
 .about .content .info .text {
     font-size: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 2.5rem;
 }
 .about .contact {
     font-size: 1.5rem;
     padding-top: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .about .contact span {
     color: #2491fd
 }
 .about .content .btn {
    display: inline-block;
+   font-weight: 500;
    margin-top: 2rem;
-   padding: 0.5rem 1rem;
-   border-radius: 5px;
+   padding: 1rem 2rem;
    background-color: #000000;
 }
 .about .content .btn a {
     font-size: 1.5rem;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: uppercase;
     color: #fff;
-}
-.about .content .btn i {
-    margin-left: .5rem;
-    font-size: 1.3rem;
 }
 /* About media queries start */ 
 @media screen and (max-width: 680px) {
@@ -387,6 +373,9 @@ header .navbar ul li a:hover {
 /* Skills style ends */
 
 /* Projects style start */
+.projects {
+    background-color: #f1f1f1;
+}
 .projects .content .heading i {
     font-size: 3.5rem;
     margin-right: 1rem;
@@ -428,17 +417,18 @@ header .navbar ul li a:hover {
     text-decoration: underline;
 }
 .projects .button {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .projects .button a {
-    background-color: #2491fd;
+    background-color: #000;
     color: #fff;
-    font-size: .8rem;
-    padding: 1rem;
-    border-radius: 5px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
 }
 /* Projects media queries start */
 @media screen and (max-width: 1100px) {
@@ -510,14 +500,20 @@ header .navbar ul li a:hover {
     resize: none;
     padding-left: 1rem;
 }
-.contact .content .form button {
-    background-color: #2491fd;
+.contact .content .form .button {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.contact .content .form .button a {
+    background-color: #000;
     color: #fff;
-    display: block;
-    width: 10rem;
-    padding: .8rem;
-    margin-top: 2rem;
-    border-radius: 5px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
 }
 .contact .content .maps {
     flex: 1;
@@ -527,22 +523,6 @@ header .navbar ul li a:hover {
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 4px;
-}
-.contact .content .contacts h2 {
-    margin-top: .2rem;
-    margin-bottom: .2rem;
-    font-size: 1.8rem;
-}
-.contact .content .contacts p {
-    font-size: 1.3rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 4px;
-}
-.contact .content .contacts p i {
-    font-size: 1.5rem; 
-    margin-right: .8rem;
-    color: #4b4b4e;
 }
 /* Contact media queries start */
 @media screen and (max-width: 810px) {
