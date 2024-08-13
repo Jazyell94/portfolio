@@ -104,14 +104,14 @@ header .navbar ul li a:hover {
     font-size: 2rem;
     cursor: pointer;
     color: #e1e1e1;
-    display: none;
+    display: none !important;
 }
 .menu-dark {
     color: #000;
 }
 @media (max-width: 768px) {
     #menu {
-        display: block;
+        display: block !important;
     }
     header .navbar {
         position: fixed;
