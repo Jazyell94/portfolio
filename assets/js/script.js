@@ -51,19 +51,21 @@ var typed = new Typed(".typing-text", {
 });
 // Efeito do texto digitando ends //
 
+
 // Efeito mudar cor da navbar ao rolar start //
 const navbar = document.querySelector('.header');
-
+const menuIcon = document.querySelector('.fa-bars');
 // Adicione um evento de rolagem à janela
 window.addEventListener('scroll', () => {
-  
   // Verifique se a página foi rolada para baixo
   if (window.scrollY > 0) {
     // Mude a cor da navbar para uma cor escura
     navbar.classList.add('navbar-dark');
+    menuIcon.classList.add('menu-dark');
   } else {
     // Mude a cor da navbar para uma cor clara
     navbar.classList.remove('navbar-dark');
+    menuIcon.classList.remove('menu-dark');
   }
 });
 
