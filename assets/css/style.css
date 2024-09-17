@@ -587,7 +587,6 @@ header .navbar ul li a:hover {
 
 /* Footer section starts */
 .footer {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
