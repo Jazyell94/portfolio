@@ -114,7 +114,7 @@ fetch('skills.json')
       // Cria um elemento HTML para cada dado
       html += `
         <div class="skill">
-            <img src=${dado.icon} alt="skill" />
+            <img src=${dado.icon} alt="skill"/>
             <h2>${dado.name}</h2>
         </div>
       `;
@@ -144,3 +144,4 @@ document.addEventListener('visibilitychange', function() {
     document.title = 'Portifólio | Jazyell Marcus';
   }
 });
+
