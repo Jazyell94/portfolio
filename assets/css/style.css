@@ -121,7 +121,7 @@ header .navbar ul li a:hover {
         height: 100%;
         text-align: left;
         align-items: flex-start;
-        background-color: #fff;
+        background-color: #f1f1f1;
     }
     header .navbar ul {
         flex-flow: column;
@@ -215,6 +215,18 @@ header .navbar ul li a:hover {
     background-color: transparent;
     border: 1.5px solid #fff;
     color: #fff;
+}
+.home .buttons .btn2:hover {
+    background-color: #fff;
+    color: #000;
+}
+.home .buttons .btn1 {
+    border: 1.5px solid #fff;
+}
+.home .buttons .btn1:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1.5px solid #fff;
 }
 .home .fa-arrow-down {
     position: absolute;
@@ -589,13 +601,13 @@ header .navbar ul li a:hover {
 .footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: auto;
-    padding-top: 0;
+    justify-content: space-between;
+    min-height: 5rem;
+    padding: 0 2rem;
     background: rgb(0, 1, 43);
 }
 .footer .credit {
-    padding: 2rem 0 0 0;
+    
     font-size: 1.5rem;
     font-family: "Nunito", sans-serif;
     font-weight: 600;
@@ -619,6 +631,15 @@ header .navbar ul li a:hover {
     to {
       transform: scale(1.1);
     }
+}
+.footer .footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+.footer .footer-links i {
+    color: #fff;
+    font-size: 2rem;
+    
 }
 /* Footer media queries start */
 @media (max-width: 600px) {
@@ -644,13 +665,13 @@ header .navbar ul li a:hover {
     right: 2rem;
     padding: 1rem 1rem;
     font-size: 2rem;
-    background: #2491fd;
+    background: rgb(0, 1, 43);;
     color: #fff;
     border-radius: 50%;
     transition: 1s linear;
     z-index: 1000;
   }
   #scroll-top.active {
-    top: calc(100% - 6.5rem);
+    top: calc(100% - 10rem);
   }
   /* scroll top ends */
