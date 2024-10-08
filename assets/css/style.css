@@ -216,16 +216,7 @@ header .navbar ul li a:hover {
     border: 1.5px solid #fff;
     color: #fff;
 }
-.home .buttons .btn2:hover {
-    background-color: #fff;
-    color: #000;
-}
 .home .buttons .btn1 {
-    border: 1.5px solid #fff;
-}
-.home .buttons .btn1:hover {
-    background-color: transparent;
-    color: #fff;
     border: 1.5px solid #fff;
 }
 .home .fa-arrow-down {
@@ -476,8 +467,14 @@ header .navbar ul li a:hover {
     margin-top: 12rem;
 }
 .projects .content .project-img {
-    background-color: #000;
     height: 80%;
+    
+    background-color: #000;
+}
+.projects .content .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .projects .content .project-info {
     padding-top: 1rem;
