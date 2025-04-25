@@ -211,7 +211,7 @@ header .navbar ul li a:hover {
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
-    z-index: 10;
+    z-index: 1000;
 }
 .home .buttons .btn1, 
 .home .buttons .btn2 {
@@ -223,6 +223,7 @@ header .navbar ul li a:hover {
     border-radius: 5px;
     color: #000;
     background-color: #fff;
+    z-index: 1000;
 }
 .home .buttons .btn2 {
     background-color: transparent;
