@@ -160,7 +160,6 @@ header .navbar ul li a:hover {
 /* Home section start */
 .home {
     background-color: #191919;
-    border: 1px solid red;
 }
 
 #particles-js {
@@ -170,7 +169,6 @@ header .navbar ul li a:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    border: 1px solid blue;
 }
 
 .home .content {
