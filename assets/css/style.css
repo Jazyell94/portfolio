@@ -211,7 +211,7 @@ header .navbar ul li a:hover {
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
-    z-index: 2;
+    z-index: 10;
 }
 .home .buttons .btn1, 
 .home .buttons .btn2 {
