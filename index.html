@@ -11,6 +11,10 @@
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/c016e2c12b.js" crossorigin="anonymous"></script>
+
+  <!-- particle.js links -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
 </head>
 
 <body>
@@ -36,10 +40,13 @@
 
   <!-- Home section start -->
   <section id="home" class="home">
+
+    <div id="particles-js"></div>
+
     <div class="content">
 
       <div class="title">
-        <h3>Olá, eu sou</h3>
+        <h3>Opa! Meu nome é</h3>
         <h2>Jazyell <span>Marcus</span></h2>
         <p><span class="typing-text"></span></p>
 
@@ -69,7 +76,7 @@
 
       <div class="info">
         <h3>Sobre mim</h3>
-        <h2>Sênior Developer from Piaui</h2>
+        <h2>Desenvolvedor Full Stack</h2>
         
 
         <p class="text">
@@ -190,19 +197,46 @@
   </section>
 
   <section id="footer" class="footer">
-    <h1 class="credit">Feito com <i class="fa fa-heart pulse"></i> por <a href="#"> Jazyell</a></h1>
-    <div class="footer-links">
-      <a href="http://"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="http://"><i class="fa-brands fa-instagram"></i></a>
-      <a href="http://"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="http://"><i class="fa-brands fa-github"></i></a>
+
+    <div class="navs">
+      <div class="box">
+        <h3>Navegação</h3>
+        <p><a href="#home">Início</a></p>
+        <p><a href="#about">Sobre</a></p>
+        <p><a href="#contact">Contato</a></p>
+      </div>
+  
+      <div class="box">
+        <h3>Suporte</h3>
+        <p><a href="#">jazyellmarcus94@gmail.com</a></p>
+      </div>
+  
+      <div class="box">
+        <h3>Social</h3>
+        <div class="icon">
+          <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+          <a href="http://"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
     </div>
+
+    <div class="copy">
+      <p>&copy 2025 Jazyell Marcus. Todos os direitos reservados.</p>
+    </div>
+    
   </section>
 
 
   <!-- scroll top btn -->
   <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
   <!-- scroll back to top -->
+
+
+  <script>
+    particlesJS.load('particles-js', 'particles-config.json', function() {
+      console.log('particles.js carregado com sucesso!');
+    });
+  </script>
 
   <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
   <!-- jquery cdn -->

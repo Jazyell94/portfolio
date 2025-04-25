@@ -161,6 +161,16 @@ header .navbar ul li a:hover {
 .home {
     background-color: #191919;
 }
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
 .home .content {
     min-height: 80vh;
     display: flex;
@@ -383,6 +393,9 @@ header .navbar ul li a:hover {
     }
 }
 @media screen and (max-width: 480px) {
+    .about .infos {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .about .content .info h2 {
         font-size: 4rem;
     }
@@ -621,28 +634,43 @@ header .navbar ul li a:hover {
 /* Footer section starts */
 .footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 5rem;
-    padding: 0 2rem;
-    background: rgb(0, 1, 43);
+    flex-direction: column;
+    min-height: 8rem;
+    padding: 3rem 1.5rem;
+    background-color: #e1e1e1;
 }
-.footer .credit {
-    
+.footer .navs .box {
+    margin-bottom: 1.2rem;
+}
+.footer .navs .box h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+.footer .navs .box p {
     font-size: 1.5rem;
-    font-family: "Nunito", sans-serif;
+}
+.footer .navs .box p a {
+    color: #282f33;
     font-weight: 600;
-    color: #fff;
 }
-.footer .credit a {
-    color: #ffae00;
+.footer .navs .box .icon {
+    display: flex;
 }
-.footer .fa {
-    color: #e90606;
-    margin: 0 0.3rem;
-    font-size: 1.5rem;
-    animation: pound 0.35s infinite alternate;
+.footer .navs .box .icon i {
+    font-size: 2rem;
+    margin-right: 1.2rem;
+    color: #282f33;
 }
+
+.footer .copy {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+    color: #282f33;
+}
+
 @-webkit-keyframes pound {
     to {
       transform: scale(1.1);

@@ -78,7 +78,6 @@ body {
   margin: 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  /*For animation dark mode*/
   transition: .4s;
 }
 
