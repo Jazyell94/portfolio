@@ -56,7 +56,7 @@ header {
     justify-content: space-between;
     padding: 1.7rem 5%;
     height: 6.5rem;
-    background-color: #191919;
+    background-color: transparent;
 }
 header .logo {
     font-family: "Raleway", sans-serif;
@@ -209,6 +209,7 @@ header .navbar ul li a:hover {
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+    z-index: 2;
 }
 .home .buttons .btn1, 
 .home .buttons .btn2 {
